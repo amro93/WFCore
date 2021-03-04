@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>WFCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WFCore.Domain\WFCore.Domain.csproj" />
+    <ProjectReference Include="..\WFCore.Application.Contracts\WFCore.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="4.2.2" />
+  </ItemGroup>
+
+</Project>
